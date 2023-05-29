@@ -15,5 +15,5 @@ create table if not exists netology.orders
     customer_id  int,
     product_name varchar(255)            not null,
     amount       int check (amount > 0 ) not null,
-    foreign key (customer_id) references customers (id)
+    foreign key (customer_id) references netology.customers (id)
 );

@@ -1,4 +1,4 @@
-INSERT INTO CUSTOMERS(name, surname, age, phone_number)
+INSERT INTO netology.CUSTOMERS(name, surname, age, phone_number)
 VALUES ('Olga', 'Sidorova', 38, '89603443434'),
        ('Ivan', 'Ivanov', 17, '89601111111'),
        ('Alexey', 'Petrov', 48, '89112222222'),
@@ -6,7 +6,7 @@ VALUES ('Olga', 'Sidorova', 38, '89603443434'),
        ('Pavel', 'Smirnov', 38, '8964554748'),
        ('Alexey', 'Kovrov', 78, '89672362527');
 
-insert into orders(date, customer_id, product_name, amount)
+insert into netology.orders(date, customer_id, product_name, amount)
 VALUES ('23-05-20', 3, 'apple', 100),
        ('23-05-19', 1, 'bread', 50),
        ('23-05-19', 5, 'milk', 90),
