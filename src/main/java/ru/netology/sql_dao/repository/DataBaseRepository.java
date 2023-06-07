@@ -12,7 +12,7 @@ public class DataBaseRepository {
     @PersistenceContext
     private EntityManager entityManager;
 
-    public List<String> getProductName(String name) {
+    public List getProductName(String name) {
         var query = entityManager.createQuery("select o.product_name from Orders o where o.customers.name=:name");
         query.setParameter("name", name);
         return query.getResultList();
